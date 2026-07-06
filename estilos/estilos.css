@@ -48,14 +48,13 @@ aside img {
 main img {
     width: 150px;
     height: auto;
-}
-
-p {
-    padding: 0;
+    padding: auto;
+    border: #000;
+    box-shadow: #eee;
 }
 
 footer {
-    margin: 15px;
+    margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
 }
