@@ -1,5 +1,9 @@
-
 /* Este é um comentário */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 nav {
     background-color: darkblue;
@@ -61,3 +65,5 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
+/* Seletores de Classe */
