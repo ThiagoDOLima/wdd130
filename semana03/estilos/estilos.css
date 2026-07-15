@@ -47,13 +47,12 @@ aside {
     color: #333;
     text-align: center;
 }
-
+/* itens removido: color: #333;
+    text-align: center; */
 aside img {
     width: 200px;
     height: auto;
-    color: #333;
-    text-align: center;
-}
+   }
 
 aside h2 {
   position: absolute;
