@@ -36,12 +36,11 @@ h1, h2 {
 }
 
 nav, p , section, article {
-    margin: 16px;
     padding: 8;
 }
 
 .redes-sociais  {
-    text-decoration: nome;
+    text-decoration: none;
     background-color: #055a05;
     text-align: center;
 
@@ -61,12 +60,12 @@ nav, p , section, article {
     overflow: hidden;
 }
 /* imagem principal de fundo ficara visível*/
-.hero .img-fundo 
-.heroo img {
+.hero .img-fundo {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;    
 }
+
  /* Faixa Superior do Titulo*/
 .hero h1 {
     position: absolute;
@@ -85,7 +84,7 @@ nav, p , section, article {
 }
 
 /* Caixa Dourada na Parte Inferior */
-.hero article,
+
 .hero .card-missao {
     position: absolute;
     bottom: 25px;
@@ -125,36 +124,6 @@ nav, p , section, article {
     flex-shrink: 0; /* Impede a imagem de encolher */
 }
 
-.hero img {
-    position: absolute; 
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
-.hero article {
-    float: right;
-    width: 125px;
-    position: relative;
-    
-}
-.hero article img {
-    float: right;
-    width: 125px;
-    text-align: left;
-    margin: 20px; 
-    
-}
 
-h1 {
-    bottom: left;
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: left;
-    opacity: 0.7;
-    background-color: var(--cor-destaque1);
-    color: #fff /* texto branco - certifique-se de que haja contraste suficiente com a cor de fundo */
-}
 
