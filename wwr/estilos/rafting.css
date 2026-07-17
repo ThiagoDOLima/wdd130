@@ -119,13 +119,19 @@ nav, p , section, article {
 }
 
 /* Texto dentro do Card Dourado */
-.hero .card-missao p {
-    margin: 0;
-    padding: 0px;
-    color: #1a1a1a;
-    font-size: 0.85rem;
-    line-height: 1.35;
-    flex: 1;
+.hero article {
+    position: absolute;
+    bottom: 25px;
+    left: 5%;
+    width: 90%;
+    background-color: rgba(241,240,237,.85);
+    border: 1px solid #b39226;
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 /* Foto Miniatura à direita */
@@ -139,6 +145,13 @@ nav, p , section, article {
     flex-shrink: 0; /* Impede a imagem de encolher */
 }
 
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.redes-sociais img {
+    width: 32px;
+}
 
 
 
