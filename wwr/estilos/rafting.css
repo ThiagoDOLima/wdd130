@@ -15,7 +15,7 @@ article/* Este é um comentário */
 }
 
 header {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-destaque2);
     color: var(--cor-destaque2);
 }
 
@@ -43,13 +43,78 @@ nav, p , section, article {
 .redes-sociais a {
     text-decoration: nome;
 }
-
+/* Container Hero (Pai da imagem e dos textos) com sobreposição */
 .hero {
     position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* imagem principal de fundo ficara visível*/
+.hero .img-fundo {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    
+}
+ /* Faixa Superior do Titulo*/
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    background-color: rgba(30, 50, 50, 0.55); /* Verde escuro/cinza com opacidade */
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Caixa Dourada na Parte Inferior */
+.hero .card-missao {
+    position: absolute;
+    bottom: 25px;
+    left: 5%;
+    width: 90%;
+    background-color: rgba(241, 240, 237, 0.85);
+    border: 1px solid #b39226;
+    padding: 15px 20px;
+    box-sizing: border-box;
+
+    /* Flexbox alinha o texto e a imagem interna lado a lado */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Texto dentro do Card Dourado */
+.hero .card-missao p {
+    margin: 0;
+    padding: 0;
+    color: #1a1a1a;
+    font-size: 0.85rem;
+    line-height: 1.35;
+    flex: 1;
+}
+
+/* Foto Miniatura à direita */
+.hero .card-missao .img-miniatura {
+    position: static;
+    width: 110px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0; /* Impede a imagem de encolher */
 }
 
 .hero img {
-    float: right;
+    position: absolute; 
     display: block;
     width: 100%;
     height: auto;
@@ -58,22 +123,26 @@ nav, p , section, article {
 .hero article {
     float: right;
     width: 125px;
-    position: absolute;
+    position: relative;
+    
 }
 .hero article img {
     float: right;
     width: 125px;
-    box-shadow: #264653;   
+    text-align: left;
+    margin: 20px; 
+    
 }
 
 h1 {
+    bottom: left;
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
-    text-align: center;
+    text-align: left;
     opacity: 0.7;
     background-color: var(--cor-destaque1);
-    color: #ffffff /* texto branco - certifique-se de que haja contraste suficiente com a cor de fundo */
+    color: #fff /* texto branco - certifique-se de que haja contraste suficiente com a cor de fundo */
 }
 
