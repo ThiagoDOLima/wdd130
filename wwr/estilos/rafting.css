@@ -92,29 +92,9 @@ nav, p , section, article {
     
 }
 
-/* Caixa Dourada na Parte Inferior */
-
-.hero .article {
-    position: absolute;
-    bottom: 25px;
-    left: 5%;
-    width: 90%;
-    background-color: rgba(241, 240, 237, 0.85);
-    border: 1px solid #b39226;
-    padding: 15px 20px;
-    box-sizing: border-box;
-    z-index: 2;
-
-    /* Flexbox alinha o texto e a imagem interna lado a lado */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-}
-
-.hero article img {
-    float: right;
-    width: 110px;
+/* Altera a imagem da caixa */
+.hero article img {    
+    width: 150px;
     margin-left: 20px;
 }
 
@@ -124,7 +104,7 @@ nav, p , section, article {
     bottom: 25px;
     left: 5%;
     width: 90%;
-    background-color: rgba(241,240,237,.85);
+    background-color: rgba(238, 237, 241, 0.85);
     border: 1px solid #b39226;
     padding: 15px 20px;
 
@@ -132,17 +112,6 @@ nav, p , section, article {
     align-items: center;
     justify-content: space-between;
     gap: 15px;
-}
-
-/* Foto Miniatura à direita */
-.hero article {
-    position: static;
-    width: 110px;
-    height: 80px;
-    object-fit: cover;
-    border: 2px solid #ffffff;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-    flex-shrink: 0; /* Impede a imagem de encolher */
 }
 
 .redes-sociais a {
