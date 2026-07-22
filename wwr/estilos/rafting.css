@@ -175,3 +175,37 @@ footer {
     width: 32px;
 }
 
+/* SEÇÃO AVENTURAS */
+.aventuras {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.aventuras h2 {
+    margin-bottom: 20px;
+}
+/* GALERIA DE IMAGENS AVENTURA */
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   
+
+}
+
+/* FIGURAS AVENTURA */
+.galeria figure {
+    text-align: center;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 140px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #999;
+}
+
+.galeria figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+}
