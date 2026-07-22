@@ -151,7 +151,7 @@ footer {
 }
 
 /* Barra das redes sociais */
-.redes-sociais {
+.socialmedia {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,17 +161,17 @@ footer {
 }
 
 /* Texto */
-.redes-sociais p {
+.socialmedia p {
     color: white;
 }
 
 /* Links */
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
 }
 
 /* Ícones */
-.redes-sociais img {
+.socialmedia img {
     width: 32px;
 }
 
