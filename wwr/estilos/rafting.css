@@ -1,10 +1,13 @@
 /* Este é um comentário */
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* VARIÁVEIS */
 :root {
     --cor-primaria: #055a05;
     --cor-secundaria: #f4a261;
@@ -13,70 +16,81 @@
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif; 
 }
-/*
-header {
-    background-color: var(--cor-destaque2);
-    color: var(--cor-destaque2);
-}
-*/
+
+/* BOBY */
 body {
     font-family: var(--fonte-body);
     color: var(--cor-destaque1);
 }
 
-header, main, footer {
+/* LAYOUT PRINCIPAL */
+main, footer {
     width: 840px;
     margin: 0 auto;
 }
 
-header, img {
-    display: flex;
-    max-width: 840px;
-    margin: 0 auto; 
-  
-}
-nav {
-  background-color: steelblue;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+/* CABEÇALHO (HEADER) */
+header {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
 }
 
+/* Logo */
+header img {
+    width: 120px;
+    justify-content: flex-end;
+}
+
+/*  MENU DE NAVEGAÇÃO */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul { 
+    display: flex;
+    list-style: none; /* remove as bolinhas */
+    margin: 0;
+    padding: 0; 
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #999;
+    padding: 10px 20px;
+    background-color: white;
+    margin-left: -1px; /* junta as bordas */
+}
+
+nav li + li a {
+    border-left: none;
+}
+
+/* TÍTULOS */
 h1, h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
 }
 
+h1 {
+    color: white;
+}
+
 h2{
     color:var(--cor-secundaria);
 }
 
-nav, p , section, article {
-    flex: auto;
-    padding: 8px;
-    
-}
+/*  HERO  */
 
-.socialmedia  {
-    text-decoration: none;
-    background-color: #055a05;
-    text-align: center;
-
-}
-
-.socialmedia p {
-    text-align: left;
-    color: #fff;
-
-}
-
-.socialmedia a {
-    text-decoration:none;
-}
-
-/* Container Hero (Pai da imagem e dos textos) com sobreposição */
 .hero {
     position: relative;
     width: 100%;
@@ -84,14 +98,15 @@ nav, p , section, article {
     margin: 0 auto;
     overflow: hidden;
 }
-/* imagem principal de fundo ficara visível*/
+
+/* Imagem principal */
 .hero .img-fundo {
     display: block;
     width: 100%;
     height: auto;
 }
 
- /* Faixa Superior do Titulo*/
+/* Faixa do título */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -104,18 +119,10 @@ nav, p , section, article {
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
-    z-index: 2;
-    
+    z-index: 2;  
 }
 
-/* Altera a imagem da caixa */
-.hero article img {
-    float: right;    
-    width: 150px;
-    margin-left: 20px;
-}
-
-/* Texto dentro do Card Dourado */
+/*  CARD DA MISSÃO DOURADO*/
 .hero article {
     position: absolute;
     bottom: 25px;
@@ -131,13 +138,40 @@ nav, p , section, article {
     gap: 15px;
 }
 
+/* Imagem do artigo */
+.hero article img {
+    float: right;    
+    width: 150px;
+    margin-left: 20px;
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: 30px;
+}
+
+/* Barra das redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--cor-primaria);
+    padding: 15px;
+}
+
+/* Texto */
+.redes-sociais p {
+    color: white;
+}
+
+/* Links */
 .redes-sociais a {
     text-decoration: none;
 }
 
+/* Ícones */
 .redes-sociais img {
     width: 32px;
 }
-
-
 
