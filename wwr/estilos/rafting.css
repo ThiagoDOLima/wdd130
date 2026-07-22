@@ -10,8 +10,8 @@
 /* VARIÁVEIS */
 :root {
     --cor-primaria: #055a05;
-    --cor-secundaria: #f4a261;
-    --cor-destaque1: #264653;
+    --cor-secundaria: #f3750e;
+    --cor-destaque1: #08506d;
     --cor-destaque2: #fff;
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif; 
@@ -114,7 +114,7 @@ h2{
     width: 100%;
     margin: 0;
     padding: 10px 0;
-    background-color: rgba(30, 50, 50, 0.55); /* Verde escuro/cinza com opacidade */
+    background-color: rgba(4, 88, 88, 0.55); /* Verde escuro/cinza com opacidade */
     color: #ffffff;
     text-align: center;
     font-size: 1.8rem;
