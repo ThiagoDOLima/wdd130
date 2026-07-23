@@ -114,7 +114,8 @@ h2 {
     width: 100%;
     margin: 0;
     padding: 10px 0;
-    background-color: var(--cor-destaque1); /* sem transparência */
+    /* background-color: var(--cor-destaque1); /* Sem transparência */
+    background-color: rgba(8, 80, 109, 0.5); /* Com Transparência */
     color: var(--cor-destaque2);
     font-family: var(--fonte-titulo);
     text-align: center;
@@ -150,41 +151,6 @@ section p {
     color: var(--cor-primaria);
 }
 
-/* RODAPÉ */
-footer {
-    margin-top: 30px;
-    background: var(--cor-destaque1);
-    color:white
-}
-
-/* Barra das redes sociais */
-.socialmedia {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background: var(--cor-destaque1);
-    padding: 15px;
-}
-
-/* Texto Redes Sociais */
-.socialmedia p {
-    color: var(--cor-destaque2);
-}
-
-/* Links */
-.socialmedia a {
-    text-decoration: none;
-}
-
-/* Ícones */
-.socialmedia img {
-    width: 32px;
-}
-
-.socialmedia nav {
-    color: var(--cor-destaque2);
-}
 
 /* SEÇÃO AVENTURAS */
 .aventuras {
@@ -219,4 +185,40 @@ footer {
 .galeria figcaption {
     margin-top: 8px;
     font-size: 14px;
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: 8px;
+    background: var(--cor-destaque1);
+    color:white
+}
+
+/* Barra das redes sociais */
+.socialmedia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--cor-secundaria);
+    padding: 8px;
+}
+
+/* Texto Redes Sociais */
+.socialmedia p {
+    color: var(--cor-destaque2);
+}
+
+/* Links */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* Ícones */
+.socialmedia img {
+    width: 20px;
+}
+
+.socialmedia nav {
+    color: var(--cor-destaque2);
 }
