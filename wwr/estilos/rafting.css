@@ -136,7 +136,7 @@ h2 {
     color: var(--cor-primaria);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: justify;
     gap: 15px;
 }
 
@@ -147,8 +147,10 @@ h2 {
     margin-left: 20px;
 }
 
+
 section p {
     color: var(--cor-primaria);
+    text-align: justify;
 }
 
 
@@ -187,6 +189,25 @@ section p {
     font-size: 14px;
 }
 
+/* IMAGEM HISTORIA*/
+.imagem-historia {
+    display: flex;
+    align-items: center; /* Alinha o texto com o centro da imagem */
+    justify-content: space-between;
+    gap: 20px; /* Espaço entre texto e imagem */
+ }
+
+.imagem-central {
+    width: 320px;  /* Ajuste a largura conforme preferir */
+    height: auto;  /* Mantém a proporção da foto */  
+    
+}
+
+/* Colunas de texto (Esquerda e Direita) */
+.texto-coluna p {
+    flex: 1; /* Faz as duas colunas de texto terem o mesmo tamanho */
+    
+}
 /* RODAPÉ */
 footer {
     margin-top: 8px;
