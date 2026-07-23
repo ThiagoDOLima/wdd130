@@ -9,7 +9,7 @@
 
 /* VARIÁVEIS */
 :root {
-    --cor-primaria: #0f0f0f;
+    --cor-primaria: #000;
     --cor-secundaria: #f3750e;
     --cor-destaque1: #08506d;
     --cor-destaque2: #fff;
@@ -20,7 +20,7 @@
 /* BOBY */
 body {
     font-family: var(--fonte-body);
-    color: var(--cor-destaque1);
+    color: var(--cor-destaque2);
 }
 
 /* LAYOUT PRINCIPAL */
@@ -35,7 +35,7 @@ header {
     grid-template-columns: 180px 1fr;
     align-items: center;
     padding: 15px 40px;
-    background-color: #fff;
+    background-color: var(--cor-secundaria);
 }
 
 /* Logo */
@@ -66,7 +66,7 @@ nav a {
     color: black;
     border: 1px solid #999;
     padding: 10px 20px;
-    background-color: white;
+    background-color: rgb(250, 248, 248);
     margin-left: -1px; /* junta as bordas */
 }
 
@@ -98,7 +98,7 @@ h1, h2 {
     height: auto;
 }
 
-/* Faixa do título */
+/* Faixa do título da Imagem Principal */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -107,7 +107,7 @@ h1, h2 {
     margin: 0;
     padding: 10px 0;
     background-color: rgba(4, 88, 88, 0.55); /* Verde escuro/cinza com opacidade */
-    color: #ffffff;
+    color: var(--cor-destaque2);
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
@@ -123,7 +123,7 @@ h1, h2 {
     background-color: rgba(238, 237, 241, 0.85);
     border: 1px solid #b39226;
     padding: 15px 20px;
-
+    color: var(--cor-primaria);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -137,6 +137,10 @@ h1, h2 {
     margin-left: 20px;
 }
 
+section p {
+    color: var(--cor-primaria);
+}
+
 /* RODAPÉ */
 footer {
     margin-top: 30px;
@@ -148,13 +152,13 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    background: var(--cor-primaria);
+    background: var(--cor-destaque1);
     padding: 15px;
 }
 
-/* Texto */
+/* Texto Redes Sociais */
 .socialmedia p {
-    color: white;
+    color: var(--cor-destaque2);
 }
 
 /* Links */
@@ -168,7 +172,7 @@ footer {
 }
 
 .socialmedia nav {
-    --cor-destaque2: #fff;
+    color: var(--cor-destaque2);
 }
 
 /* SEÇÃO AVENTURAS */
