@@ -77,10 +77,11 @@ nav li + li a {
 }
 
 /* TÍTULOS */
-
+/*
 h1{
     color:white;
 }
+    */
 h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
@@ -115,7 +116,7 @@ h2 {
     margin: 0;
     padding: 10px 0;
     /* background-color: var(--cor-destaque1); /* Sem transparência */
-    background-color: rgba(8, 80, 109, 0.5); /* Com Transparência */
+    background-color: rgba(8, 80, 109, 0.85); /* Com Transparência */
     color: var(--cor-destaque2);
     font-family: var(--fonte-titulo);
     text-align: center;
@@ -221,7 +222,7 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    background: var(--cor-secundaria);
+    background: var(--cor-primaria);
     padding: 8px;
 }
 
