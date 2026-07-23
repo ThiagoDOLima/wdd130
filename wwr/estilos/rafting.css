@@ -77,6 +77,10 @@ nav li + li a {
 }
 
 /* TÍTULOS */
+
+h1{
+    color:white;
+}
 h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
