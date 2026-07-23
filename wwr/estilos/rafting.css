@@ -110,8 +110,7 @@ h1, h2 {
     width: 100%;
     margin: 0;
     padding: 10px 0;
-    /* background-color: rgba(4, 88, 88, 0.55); /* Verde escuro/cinza com opacidade */
-    background: rgba(4,88,88,.70);
+    background-color: rgba(4, 88, 88,.70); /* Verde escuro/cinza com opacidade */
     color:white;
     text-align: center;
     font-size: 1.8rem;
