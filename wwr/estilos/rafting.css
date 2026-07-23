@@ -136,7 +136,7 @@ h2 {
     color: var(--cor-primaria);
     display: flex;
     align-items: center;
-    justify-content: justify;
+    
     gap: 15px;
 }
 
