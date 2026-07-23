@@ -32,7 +32,7 @@ main, footer {
 /* CABEÇALHO (HEADER) */
 header {
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 150px 1fr;
     align-items: center;
     padding: 15px 40px;
     background-color: var(--cor-secundaria);
@@ -63,7 +63,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: var(--cor-primaria);
     border: 1px solid #999;
     padding: 10px 20px;
     background-color: rgb(250, 248, 248);
@@ -81,12 +81,12 @@ h1, h2 {
     text-align: center;
 }
 
-/*  HERO  */
+/*  HERO Parte Superior da Pagina Logo e o Menu  */
 
 .hero {
     position: relative;
     width: 100%;
-    max-width: 900px;
+    max-width: 840px;
     margin: 0 auto;
     overflow: hidden;
 }
