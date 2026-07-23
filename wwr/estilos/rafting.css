@@ -77,10 +77,10 @@ nav li + li a {
 }
 
 /* TÍTULOS */
-h1, h2 {
+h2 {
     font-family: var(--fonte-titulo);
     /* color: var(--cor-primaria);*/
-    color: black;
+    color: white;
     background-color: var(--cor-destaque2);
     text-align: center;
 }
@@ -112,6 +112,7 @@ h1, h2 {
     padding: 10px 0;
     background-color: rgba(4, 88, 88,.70); /* Verde escuro/cinza com opacidade */
     color:white;
+    font-family: var(--fonte-titulo);
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
