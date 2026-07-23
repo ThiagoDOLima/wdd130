@@ -79,7 +79,9 @@ nav li + li a {
 /* TÍTULOS */
 h1, h2 {
     font-family: var(--fonte-titulo);
-    color: var(--cor-primaria);
+    /* color: var(--cor-primaria);*/
+    color: black;
+    background-color: var(--cor-destaque2);
     text-align: center;
 }
 
