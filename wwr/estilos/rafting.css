@@ -125,6 +125,22 @@ h2 {
     z-index: 2;  
 }
 
+.botao-passeio {
+    display: inline-block;
+    padding: 15px 15px;
+    background: linear-gradient(135deg, #f3750e, #ff9d2e);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 6px 15px rgba(243, 117, 14, 0.35);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
 /*  CARD DA MISSÃO DOURADO*/
 .hero article {
     position: absolute;
@@ -140,6 +156,7 @@ h2 {
     
     gap: 15px;
 }
+
 
 /* Imagem do artigo */
 .hero article img {
