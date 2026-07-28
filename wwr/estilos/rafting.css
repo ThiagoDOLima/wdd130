@@ -217,31 +217,31 @@ footer {
 }
 
 /* Barra das redes sociais */
-.socialmedia {
+.redes-sociais {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     background: var(--cor-primaria);
-    padding: 8px;
+    padding: 5px;
 }
 
 /* Texto Redes Sociais */
-.socialmedia p {
+.redes-sociais p {
     color: var(--cor-destaque2);
 }
 
 /* Links */
-.socialmedia a {
+.redes-sociais a {
     text-decoration: none;
 }
 
 /* Ícones */
-.socialmedia img {
-    width: 20px;
+.redes-sociais img {
+    width: 15px;
 }
 
-.socialmedia nav {
+.redes-sociais nav {
     color: var(--cor-destaque2);
 }
 
