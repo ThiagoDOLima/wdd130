@@ -280,13 +280,14 @@ footer {
     justify-content: space-between;
     align-items: center;
 
-    background: var(--cor-primaria);
+    background: var(--cor-secundaria);
     padding: 5px;
 }
 
 /* Texto Redes Sociais */
 .redes-sociais p {
     color: var(--cor-destaque2);
+    align-items: center;
 }
 
 /* Links */
@@ -296,11 +297,13 @@ footer {
 
 /* Ícones */
 .redes-sociais img {
-    width: 15px;
+    width: 25px;   
+
 }
 
 .redes-sociais nav {
-    color: var(--cor-destaque2);
+    color: var(--cor-secundaria);
+    
 }
 
 /* Pagina Contato */
