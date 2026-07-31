@@ -181,6 +181,29 @@ h2 {
     }
 }
 
+.botao-faleconsco {
+    display: grid;
+    padding: 15px 15px;
+    background: linear-gradient(135deg, #f3750e, #ff9d2e);
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 6px 15px rgba(243, 117, 14, 0.35);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    transform: translateY(-20px);
+    margin-top: -40px;
+
+    animation: piscar 1.5s infinite;
+
+    margin-top: 35px;
+}
+    
+
 
 /*  CARD DA MISSÃO DOURADO*/
 .hero article {
@@ -414,7 +437,8 @@ input[type="checkbox"]{
 
 /* Botão */
 .botao{
-    margin-top: 15px;
+    margin-left: 140px;
+    
 }
 
 .botao button{
