@@ -137,7 +137,8 @@ h2 {
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
-    z-index: 2;  
+    z-index: 2; 
+    
 
 }
 /* Texto Rio Abaixo de Rafting */
@@ -156,6 +157,7 @@ h2 {
     font-size: 2.8rem;
     font-weight: bold;
     z-index: 2;
+     
 
 }
 
@@ -176,16 +178,11 @@ h2 {
 
 .faixanossopasseio h1{
     position:absolute;
-
     top: 00px;
     left:0px;
-
     width:100%;
-
     background:rgba(8,80,109,.85);
-
     padding:10px 0;
-
     text-align:center;
     z-index: 10;
 }
@@ -203,6 +200,7 @@ h2 {
     margin-bottom: 430px;
 
     text-shadow: 2px 2px 8px black;
+    animation: piscar 1.5s infinite;
 }
 
 
@@ -430,30 +428,28 @@ footer {
     align-items: center;
 
     background: var(--cor-secundaria);
-    padding: 5px;
+    padding: 0px;
 }
 
 /* Texto Redes Sociais */
 .redes-sociais p {
     color: var(--cor-destaque2);
-    align-items: center;
-}
-
-/* Links */
-.redes-sociais a {
-    text-decoration: none;
-}
-
-/* Ícones */
-.redes-sociais img {
-    width: 25px;   
-
-}
-
-.redes-sociais nav {
-    color: var(--cor-secundaria);
     
 }
+
+
+/* Ícones */
+.redes-sociais a img {    
+    width: 24px;   /* Tamanho do ícone */
+    height: 24px;
+    display: block;
+    background: transparent; /* Garante fundo transparente */
+    border-radius: 50%;      /* Deixa bordas suaves/arredondadas se necessário */
+    transition: transform 0.2s ease;   
+
+}
+
+
 
 /* Pagina Contato */
 
