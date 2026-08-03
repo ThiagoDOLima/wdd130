@@ -138,23 +138,59 @@ h2 {
     z-index: 2;  
 
 }
-
+/* Texto Rio Abaixo de Rafting */
 .hero h1 {
-position: absolute;
-    top: 0px;
+    position: absolute;
+    top: 10px;
     left: 0;
-    width: 100%;
-    margin: 0;
-    padding: 20px;
+    width: 120%;
+    margin: -90px;
+    padding: 10px;
     /* background-color: var(--cor-destaque1); /* Sem transparência */
     background-color: rgba(8, 80, 109, 0.85); /* Com Transparência */
     color: var(--cor-destaque2);
     font-family: var(--fonte-titulo);
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: bold;
     z-index: 2;
 
+}
+
+/* Faixa nossa Missão */
+.nossamissao{
+    position: absolute;
+
+    top: 70px;
+    left: 10px;
+    right: 20px;
+    width: 100%;
+    margin: 0; 
+    background-color: rgba(8, 80, 109, 0.85); /* Com Transparência */
+    color: white;
+    text-align: center;  
+    z-index: 10;
+}
+
+.faixanossopasseio h1{
+    position:absolute;
+
+    top: 00px;
+    left:0px;
+
+    width:100%;
+
+    background:rgba(8,80,109,.85);
+
+    padding:10px 0;
+
+    text-align:center;
+    z-index: 10;
+}
+
+.faixanossopasseio h1{
+    margin:0;
+    color:white;
 }
 
 /* Parágrafo */
@@ -195,25 +231,34 @@ position: absolute;
     object-fit: cover;
 }
 
-.botao-contato {
-    display: grid;
-    padding: 15px 15px;
+.botao-contato{
+    position: absolute;
+
+    top: 580px;          /* abaixo do título */
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: inline-block;
+    padding: 15px 30px;
+
     background: linear-gradient(135deg, #f3750e, #ff9d2e);
-    color: #fff;
+    color: white;
+
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
+
     border-radius: 50px;
-    box-shadow: 0 6px 15px rgba(243, 117, 14, 0.35);
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-    transform: translateY(-20px);
-    margin-top: -40px;
+
+    box-shadow: 0 6px 15px rgba(243,117,14,.35);
+
+    transition: .3s;
+
+    z-index: 10;
 
     animation: piscar 1.5s infinite;
-    }
+}
 
 @keyframes piscar {
     0% {
@@ -231,7 +276,7 @@ position: absolute;
 
 .botao-faleconsco {
     display: grid;
-    padding: 15px 15px;
+    padding: 25px 10px;
     background: linear-gradient(135deg, #f3750e, #ff9d2e);
     color: #fff;
     text-decoration: none;
@@ -248,7 +293,7 @@ position: absolute;
 
     animation: piscar 1.5s infinite;
 
-    margin-top: 35px;
+    margin-top: 55px;
 }
     
 
@@ -256,7 +301,7 @@ position: absolute;
 /*  CARD DA MISSÃO DOURADO*/
 .hero article {
     position: absolute;
-    bottom: 15px;
+    bottom: 0px;
     left: 0%;
     width: 100%;
     background-color: rgba(238, 237, 241, 0.85);
@@ -264,7 +309,7 @@ position: absolute;
     padding: 15px 20px;
     color: var(--cor-primaria);
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     
     gap: 15px;
 }
@@ -433,16 +478,29 @@ form {
 }
 
 /* CAMPOS */
-.campo {
-    display: flex;
-    flex-direction: column;
+
+.camponome{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
     gap: 0px;
+    margin-bottom: 5px;
+    font-weight: bold
+
 }
 
 .campo label {
+    display: block;
     font-weight: bold;
-    grid-template-columns: 120px 1fr;
+    margin-bottom: 8px;
+}
 
+.campo{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 /* CAMPOS DE TEXTO*/
@@ -450,17 +508,38 @@ input[type="text"],
 input[type="email"],
 textarea{
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    
 }
 
 textarea {
-    min-height: 80px;
+    width: 100%;
+    min-height: 50px;
+    padding: 10px;
     resize: vertical;
 
 }
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+}
+
+.checkbox{
+    margin-top: 0px;
+}
+
+.checkbox label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /* RADIO */
 .radio{
     display:flex;
@@ -472,6 +551,8 @@ textarea {
     width: auto;
 }
 
+
+
 /* Checkbox */
 input[type="checkbox"]{
     width: auto;
@@ -479,7 +560,7 @@ input[type="checkbox"]{
 
 .radio label{
     display: flex;
-    align-items: center;
+    align-items: column;
     gap: 8px;
 }
 
