@@ -13,6 +13,7 @@
     --cor-secundaria: #f3750e;
     --cor-destaque1: #08506d;
     --cor-destaque2: #fff;
+    --cor-destaque3: #EAF7F5;
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif; 
 }
@@ -20,14 +21,15 @@
 /* BOBY */
 body {
     font-family: var(--fonte-body);
-    background-color: var(--cor-destaque2);
+    background-color: var(--cor-destaque3);
     color: #000;
 }    
 
 /* LAYOUT PRINCIPAL */
 main, footer {
-    width: 840px;
+    max-width: 840px;;
     margin: 0 auto;
+    background-color: var(--cor-destaque3);
 }
 
 /* CABEÇALHO (HEADER) */
@@ -36,7 +38,7 @@ header {
     grid-template-columns: 150px 1fr;
     align-items: center;
     padding: 15px 40px;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-destaque3);
     color: var(--cor-primaria);
 }
 
@@ -95,7 +97,7 @@ h2 {
 .hero {
     position: relative;
     width: 100%;
-    max-width: 840px;
+    max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
     
