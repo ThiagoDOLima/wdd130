@@ -52,6 +52,7 @@ header img {
 nav {
     display: flex;
     justify-content: flex-end;
+    
 }
 
 nav ul { 
@@ -72,6 +73,7 @@ nav a {
     padding: 10px 20px;
     background-color: rgb(250, 248, 248);
     margin-left: -1px; /* junta as bordas */
+    
 }
 
 nav li + li a {
@@ -420,40 +422,40 @@ section p {
 footer {
     margin-top: 8px;
     background: var(--cor-destaque1);
-    color:white
+    color:rgb(6, 155, 241);
+    max-width: 100%;
 }
 
 /* Barra das redes sociais */
-.redes-sociais {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background: var(--cor-secundaria);
-    padding: 0px;
-}
-
-/* Texto Redes Sociais */
-.redes-sociais p {
-    color: var(--cor-destaque2);
+.redes-sociais{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:var(--cor-destaque3);
     
 }
 
+.icones-sociais{
+    display:flex;
+    gap:10px;
+    
+    
+}
 
-/* Ícones */
-.redes-sociais a img {    
-    width: 24px;   /* Tamanho do ícone */
-    height: 24px;
-    display: block;
-    background: transparent; /* Garante fundo transparente */
-    border-radius: 50%;      /* Deixa bordas suaves/arredondadas se necessário */
-    transition: transform 0.2s ease;   
+.icones-sociais img{
+    width:24px;
+    transition:.2s;
+    
+}
 
+.icones-sociais img:hover{
+    transform:scale(1.2);
 }
 
 
 
-/* Pagina Contato */
+
 
 /* GALERIA DE IMAGENS CONTATO */
 .contato-galeria {
