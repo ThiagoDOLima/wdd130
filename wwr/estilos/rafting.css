@@ -21,9 +21,16 @@
 /* BOBY */
 body {
     /* font-family: var(--fonte-body);*/
-    font-family: 'Permanent Marker', cursive;
+    /*font-family: 'Permanent Marker', cursive;
     background-color: var(--cor-destaque3);
-    color: #000;
+    color: #000;*/
+    background:
+        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+        url("../imagens/image-fundo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }    
 
 /* LAYOUT PRINCIPAL */
@@ -91,7 +98,8 @@ h1{
 }
     */
 h2 {
-    font-family: var(--fonte-titulo);
+    font-family: 'Permanent Marker', cursive;
+    /* font-family: var(--fonte-titulo); */
     color: var(--cor-primaria);
     /* background-color: var(--cor-destaque2); */
     /* background-color: transparent;*/
@@ -200,22 +208,20 @@ h2 {
     padding:10px 0;
     text-align:center;
     z-index: 10;
-}
-
-.faixanossopasseio h1{
     margin:0;
     color:white;
 }
 
+
 .faixanossopasseio p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 
     margin-bottom: 100px;
     text-shadow: 2px 2px 8px black;
     position: absolute;
 
     top: 80px;          /* abaixo do título */
-    left: 0%;
+    left: 5%;
     color: white;
     text-align: center;
     font-size: 1.1rem;
@@ -281,7 +287,7 @@ h2 {
 
 .imagem-principal p {
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -305,7 +311,7 @@ h2 {
 
 .imagem-principal2 p {
     position: absolute;
-    top: 800px;
+    top: 950px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -323,7 +329,7 @@ h2 {
 .botao-contato{
     position: absolute;
     top: 280px;          /* abaixo do título */
-    right: -10%;
+    right: 10%;
     transform: translateX(-50%);
     display: inline-block;
     padding: 10px 20px;
@@ -399,7 +405,7 @@ h2 {
     color: var(--cor-primaria);
     display: flex;
     align-items: flex-end;
-    
+    font-family: 'Permanent Marker', cursive;
     gap: 15px;
 }
 
@@ -511,10 +517,38 @@ section p {
 .galeria-index figcaption {
     text-align: center;
 }
-/* Escureça a imagem no hover */
-/*.galeria-index figure:hover img{
-    filter:brightness(70%);
-}*/
+ /* Galeria Passeio */
+
+.galeria-passeio {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 30px;  /* Espaço entre as imagens */
+    
+}
+
+.galeria-passeio figure {
+    overflow: hidden;
+    border-radius:15px;
+    width: 350px;       /* Largura da caixa */
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+.galeria-passeio img{
+    transition:0.4s;
+    width: 100%; /* aproxima a imagem*/
+    height: 500px;      /* Aumenta a altura da imagem */
+    object-fit:cover;
+}
+
+.galeria-passeio figure:hover img{
+    transform: scale(1.1); /* Efeito de zoom mais suave */   
+    
+}
+
+.galeria-passeio figcaption {
+    text-align: center;
+}
 
 /* IMAGEM HISTORIA*/
 .imagem-historia {
